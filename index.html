@@ -538,7 +538,8 @@
      
     
   </div> <!-- .site-wrap -->
-
+  
+  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -555,6 +556,147 @@
 
   
   <script src="js/main.js"></script>
+   
+   
+   
     
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- main js -->
+<script src="js/jquery-2.2.3.min.js"></script> 
+<!-- //main js -->
+<!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!--bootstrap js -->
+<!-- carousal -->
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function() {
+		  $(".center").slick({
+			dots: true,
+			infinite: true,
+			centerMode: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					slidesToShow: 2
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '40px',
+					slidesToShow: 1
+				  }
+				}
+			 ]
+		  });
+		});
+	</script>
+<!-- //carousal -->
+<!-- /gallery -->
+	<script type="text/javascript" src="js/smoothbox.jquery2.js"></script>
+		<link rel="stylesheet" href="css/smoothbox.css" type="text/css">
+		<!-- //gallery -->
+<script src="js/easy-responsive-tabs.js"></script>
+<script>
+$(document).ready(function () {
+$('#horizontalTab').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion           
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script>
+	<!-- FlexSlider --> 
+	<script defer="" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+	<!-- End-slider-script --> 
+			
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->   
+	
+	<!-- /start-smooth-scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+		<!-- //start-smooth-scrolling -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+
+<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
+<div style="position: absolute; z-index: -10000; top: 0px; left: 0px; right: 0px; height: 3361px;"></div>
+<div style="clear: both;">
+  
+</div>
+
+</body>
 </html>
+
