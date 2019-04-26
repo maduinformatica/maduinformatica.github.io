@@ -103,12 +103,12 @@ h1, h2, h3, h4, h5,
     box-shadow: none !important; }
 
 .site-section {
-  padding: 5.8em 0 0; }
+  padding: 5.8em 0 0.1em; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 5.8em 0 0; } }
+      padding: 5.8em 0 0.1em; } }
   .site-section.site-section-sm {
-    padding: 4em 0 0; }
+    padding: 4em 0 0.1em; }
 
 .site-section-heading {
   padding-bottom: 20px;
